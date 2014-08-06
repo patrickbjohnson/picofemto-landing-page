@@ -1,2 +1,5 @@
 .center {text-align: center;}
-.is-active {opacity: 1;}
+.is-active {
+  @include vendor-prefix(transition, all 400ms ease);
+  opacity: 1;
+}

@@ -2,7 +2,7 @@
 	font-family: $font-family-sans-serif;
 	font-weight: 300;
 	overflow: hidden;
-
+	.modal-content button:hover
 	.modal-header {background: $pico-gray-light;}
 	.modal-title {font-weight: 300;}
 	label {
@@ -10,13 +10,7 @@
 		font-weight: 300;
 	}
 
-	button:hover {
+	.btn-primary:hover {
 		border: 3px solid $pico-blue;
-	}
-}
-
-.mc_embed_signup {
-	#mce-response {
-		// margin-bottom: 100px;
 	}
 }

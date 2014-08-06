@@ -9,11 +9,10 @@
       <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
       <!-- build:css styles/vendor.css -->
       <!-- bower:css -->
-
       <!-- endbower -->
       <!-- endbuild -->
       <!-- build:css(.tmp) styles/main.css -->
-      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Roboto:400,400italic,500,500italic,700,700italic,900,900italic,100,100italic,300,300italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="styles/main.css">
       <!-- endbuild -->
       <!-- build:js scripts/vendor/modernizr.js -->
@@ -38,7 +37,6 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand pic" href="/">
-          
             <img src="images/picofemto-logo.svg">
           </a>
         </div>
@@ -46,8 +44,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav nav-items">
-            <li><a href="#">Learn More</a></li>
-            <li><a href="#">Product Features</a></li>
+            <li><a href="#features">Learn More</a></li>
+            <li><a href="#benefits">Product Benefits</a></li>
 
           </ul>
           <form class="navbar-form navbar-right" role="login">
@@ -67,9 +65,9 @@
         <h1>Cliniscan<sup>SM</sup> EEG Decision Support</h1>
         <h2>Cloud based medical data analysis and visualization</h2>
         <p>With a focus on assisting clinicians and research professionals, we’ve built an easy-to-use web-based platform that analyzes medical data at the stage of interpretation.</p>
-        <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#email-subscribe">Get Started</a>
-        <a class="btn btn-secondary btn-lg" href="#">Learn More</span></a>
-        <a href="#" class="scroll-jump"><span class="glyphicon glyphicon-chevron-down"></a></span>
+        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#email-subscribe">Get Started</a>
+        <a class="btn btn-secondary" href="#features">Learn More</span></a>
+        <a href="#marketing" class="scroll-jump"><span class="glyphicon glyphicon-chevron-down"></a></span>
       </div>
     </div>
   </div>
@@ -83,10 +81,37 @@
   </div>
   <!-- /marketing section -->
   <div class="section jumbotron product-key" id="features">
-    <img class="img-responsive" src="images/product@2x.jpg" alt="">
-    <div class="container key-features">
+    <img class="img-responsive" src="images/product-comp.jpg" usemap="#keyfeatures" alt="">
+      <map id="keyfeatures" name="keyfeatures">
+        <area shape="circle" alt="" title="" coords="489,140,26" href="#power" target="_self" />
+        <area shape="circle" alt="" title="" coords="667,271,26" href="#coherence" target="_self" />
+        <area shape="circle" alt="" title="" coords="607,452,26" href="#ica" target="_self" />
+        <area shape="circle" alt="" title="" coords="136,376,26" href="#dsa" target="_self" />
+      </map>
+    <div class="key-features">
+      <h1>Key Features</h1>
+      <div class="features">
+        <div id="power" class="feat-description col-xs-12 col-sm-6 col-md-12 is-active">
+          <h2>1. Power</h2>
+          <p>Using FFT, analyze and compare the spectrum of any EEG two channels and apply Wavelet Subband breakdown to inspect the individual known frequency subband signals (Delta, Theta, Alpha, Beta and Gamma) making up the channel data.</p>
+        </div>
+        <div id="coherence" class="feat-description col-xs-12 col-sm-6 col-md-12">
+          <h2>2. Coherence</h2>
+          <p>Rapidly scrutinize inter- and/or intra-hemispheric communications using Coherence maps. The tool comprises a sensitivity bar with a threshold marker as well as application of coherence calculations on known frequency subbands and the composite channel data.</p>
+        </div>
+        <div id="ica" class="feat-description col-xs-12 col-sm-6 col-md-12">
+          <h2>3. ICA</h2>
+          <p>Visualize the regions of highest electrophysiological activity through the Independent Component Analysis. Using blind source separation, detected sources are back projected onto the electrode map to examine influence of each sources on all electrodes. Any portion of the EEG recording can be investigated for the most powerful sources conjointly with the overall effect of all sources.</p>
+        </div>
+        <div id="dsa" class="feat-description col-xs-12 col-sm-6 col-md-12">
+          <h2>4. DSA</h2>
+          <p>The density spectral array acts as a fast way to picture changes in the frequency composition of EEG channel data. The investigator views the dominant frequency ranges through a color spectrum scaled to the lower and higher powers of frequency ranges in individual and in all channels.</p>
+        </div>
+      </div> 
+    </div>
+<!--     <div class="container key-features">
       <div class="row">
-      <!-- col-lg-8 col-md-8  -->
+
         <div class="col-xs-12 col-sm-12 col-md-8 features-anchor">
           <ul>
             <li class="is-active"><a class="col-md-2 feature-1 " href="#power">1</a></li>
@@ -95,7 +120,7 @@
             <li><a class="col-md-2 feature-4" href="#hope">4</a></li>
           </ul>
         </div>
-        <!-- col-lg-4 col-md-4  -->
+
         <div class="col-xs-12 col-sm-12 col-md-4">
           <h1>Key Features</h1>
           <div class="features">
@@ -103,28 +128,50 @@
               <h2>1. Power</h2>
               <p>Using FFT, analyze and compare the spectrum of any EEG two channels and apply Wavelet Subband breakdown to inspect the individual known frequency subband signals (Delta, Theta, Alpha, Beta and Gamma) making up the channel data.</p>
             </div>
-            <div id="love" class="feat-description col-xs-12 col-sm-6 col-md-12">
+            <div id="coherence" class="feat-description col-xs-12 col-sm-6 col-md-12">
               <h2>2. Coherence</h2>
               <p>Rapidly scrutinize inter- and/or intra-hemispheric communications using Coherence maps. The tool comprises a sensitivity bar with a threshold marker as well as application of coherence calculations on known frequency subbands and the composite channel data.</p>
             </div>
-            <div id="fear" class="feat-description col-xs-12 col-sm-6 col-md-12">
+            <div id="ica" class="feat-description col-xs-12 col-sm-6 col-md-12">
               <h2>3. ICA</h2>
               <p>Visualize the regions of highest electrophysiological activity through the Independent Component Analysis. Using blind source separation, detected sources are back projected onto the electrode map to examine influence of each sources on all electrodes. Any portion of the EEG recording can be investigated for the most powerful sources conjointly with the overall effect of all sources.</p>
             </div>
-            <div id="hope" class="feat-description col-xs-12 col-sm-6 col-md-12">
+            <div id="dsa" class="feat-description col-xs-12 col-sm-6 col-md-12">
               <h2>4. DSA</h2>
               <p>The density spectral array acts as a fast way to picture changes in the frequency composition of EEG channel data. The investigator views the dominant frequency ranges through a color spectrum scaled to the lower and higher powers of frequency ranges in individual and in all channels.</p>
             </div>
           </div> 
         </div>
       </div>
-    </div>
+    </div> -->
+    
     <!-- <img class="img-responsive" src="images/product-comp.jpg" usemap="#keyfeatures" alt="">
-    <map id="keyfeatures" name="keyfeatures"><area shape="circle" alt="" title="" coords="489,140,26" href="#power" target="_self" /><area shape="circle" alt="" title="" coords="667,271,26" href="" target="_self" /><area shape="circle" alt="" title="" coords="607,452,26" href="" target="_self" /><area shape="circle" alt="" title="" coords="136,376,26" href="#dsa" target="_self" /></map> -->
-    <!-- <div class="container">
+    <map id="key-features" name="key-features"><area shape="circle" alt="Power" title="" coords="488,139,27" href="#power" target="" /><area shape="circle" alt="coherence" title="" coords="667,271,27" href="#coherence" target="" /><area shape="circle" alt="ica" title="" coords="607,452,27" href="#ica" target="" /><area shape="circle" alt="dsa" title="" coords="137,377,27" href="#dsa" target="" /></map> -->
+    
+
+
+    <!-- <div class="container key-features">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-offset-8 col-md-4">
-          test
+          <h1>Key Features</h1>
+          <div class="features">
+            <div id="power" class="feat-description col-xs-12 col-sm-12 col-md-12 is-active">
+              <h2>1. Power</h2>
+              <p>Using FFT, analyze and compare the spectrum of any EEG two channels and apply Wavelet Subband breakdown to inspect the individual known frequency subband signals (Delta, Theta, Alpha, Beta and Gamma) making up the channel data.</p>
+            </div>
+            <div id="coherence" class="feat-description col-xs-12 col-sm-12 col-md-12">
+              <h2>2. Coherence</h2>
+              <p>Rapidly scrutinize inter- and/or intra-hemispheric communications using Coherence maps. The tool comprises a sensitivity bar with a threshold marker as well as application of coherence calculations on known frequency subbands and the composite channel data.</p>
+            </div>
+            <div id="ica" class="feat-description col-xs-12 col-sm-12 col-md-12">
+              <h2>3. ICA</h2>
+              <p>Visualize the regions of highest electrophysiological activity through the Independent Component Analysis. Using blind source separation, detected sources are back projected onto the electrode map to examine influence of each sources on all electrodes. Any portion of the EEG recording can be investigated for the most powerful sources conjointly with the overall effect of all sources.</p>
+            </div>
+            <div id="dsa" class="feat-description col-xs-12 col-sm-12 col-md-12">
+              <h2>4. DSA</h2>
+              <p>The density spectral array acts as a fast way to picture changes in the frequency composition of EEG channel data. The investigator views the dominant frequency ranges through a color spectrum scaled to the lower and higher powers of frequency ranges in individual and in all channels.</p>
+            </div>
+          </div> 
         </div>
       </div>
     </div> -->
@@ -234,7 +281,7 @@
         <li><span class="glyphicon glyphicon-ok"></span> Data analysis process that analyzes data files and produces an instant output result</li>
         <li><span class="glyphicon glyphicon-ok"></span> Custom interface that allows user to explore the results of a data analysis</li>
       </ul>
-      <a class="btn btn-lg btn-primary" href="#">Get Started</a>
+      <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#email-subscribe">Get Started</a>
     </div>
   </div>
   <div class="section jumbotron company-shot">
@@ -268,60 +315,62 @@
       </div>
     </div>
   </footer>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="email-subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title center" id="myModalLabel">Request A Demo</h4>
-      </div>
-      <div class="modal-body">
-        <form id="form-demo" method="POST" action="includes/test.php" role="form">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group name-group">
-                <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" tabindex="1" >
+  <div class="modal fade" id="email-subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <p class="modal-title center" id="myModalLabel">Thanks for your interest in Cliniscan EEG Decision Support! We are currently in private beta so please fill out the form below and we’ll be in touch to set you up with a demo.</p>
+        </div>
+        <div class="modal-body">
+          <form id="form-demo" method="POST" action="includes/test.php" role="form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group name-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" tabindex="1" >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group email-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" >
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group email-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" >
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group company-group">
+                  <label for="company">Company</label>
+                  <input type="text" name="company" id="company" class="form-control" placeholder="Company" tabindex="3" >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group title-group">
+                  <label for="title">Title</label>
+                  <input name="title" id="title" class="form-control" placeholder="Title" tabindex="4" ></input>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group company-group">
-                <label for="company">Company</label>
-                <input type="text" name="company" id="company" class="form-control" placeholder="Company" tabindex="3" >
-              </div>
+            <div class="row message center"></div>
+            <div class="row center">
+              <button class="btn btn-primary" name="submit" tabindex="4">submit</button>
             </div>
-            <div class="col-md-6">
-              <div class="form-group title-group">
-                <label for="title">Title</label>
-                <input name="title" id="title" class="form-control" placeholder="Title" tabindex="4" ></input>
-              </div>
-            </div>
-          </div>
-          <div class="row message center"></div>
-          <div class="row center">
-            <button class="btn btn-primary" name="submit" tabindex="4">submit</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
+<!-- Modal -->
+
   
 
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/modernizr/modernizr.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -350,6 +399,7 @@
   <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
   <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
   <script src="bower_components/SVGMagic/src/jquery.svgmagic.js"></script>
+  <script src="bower_components/rwdImageMaps/jquery.rwdImageMaps.js"></script>
   <!-- endbuild -->
 
   <!-- build:js({app,.tmp}) scripts/main.js -->
