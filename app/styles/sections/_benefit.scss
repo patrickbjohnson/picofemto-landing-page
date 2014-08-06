@@ -1,0 +1,74 @@
+// .product-benefits .pico-divide {
+// 	margin-bottom: 0;
+// }
+.benefits {
+	h1 {text-align: center;}
+	&-hero {
+		display: block;
+		margin: 70px auto 80px;
+		width: 900px;
+		img {
+			max-width: 900px;
+		}
+	}
+	
+	&-item {
+		min-height: 300px;
+		text-align: center;
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+		}
+	}
+
+	// icons group
+	&-icons {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	// individual icon
+	&-icon {
+		width: 95px;
+		display: inline-block; 
+	}
+	
+	&-headline {
+		font-size: em(24px);
+		font-weight: 400;
+		color: $pico-blue;
+	}
+
+	&-item h1 {font-size: em(24px);}
+	&-item .icons {
+		display: inline-block;
+		line-height: 125px;
+	}
+}
+
+// .product-item {
+// 	height: 300px;
+// 	text-align: center;
+
+// 	h1 {font-size: em(24px);}
+// 	.icons {
+// 		display: inline-block;
+// 		line-height: 125px;
+// 	}
+// }
+
+
+.benefits-icon {
+	
+
+}
+
+
+.dashboard 	{width: 65px; height: 65px;}
+.toolbox 		{width: 90px; height: 65px;}
+.plugin 		{width: 75px; height: 70px;}
+.fourier 		{width: 75px; height: 95px;}
+.cloud 			{width: 110px; height: 60px;}
+.screen 		{height: 95px; height: 95px;}
+

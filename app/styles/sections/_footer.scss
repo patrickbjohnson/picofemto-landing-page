@@ -1,0 +1,19 @@
+.footer {
+	width: 100%;
+	margin-bottom: 0;
+	background: $pico-gray-light;
+	
+	li {
+		padding: 75px 0 50px;
+		font-size: em(22px);
+		p.copyright {
+			font-size: em(10px);
+			font-weight: bold;
+		}
+	}
+	.glyphicon {
+		margin-bottom: 15px;
+		font-size: em(28px);
+		color: $pico-gray-mid;
+	}
+}

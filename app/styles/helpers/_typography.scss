@@ -1,0 +1,61 @@
+h1,h2,h3,h4,h5,h6 {
+	margin: 0; 
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.orange {color: $pico-orange;}
+.upper {text-decoration: uppercase;}
+
+.light-300 	{font-weight: 300;}
+.reg-400 		{font-weight: 400;}
+.bold-700 	{font-weight: 700;}
+.heavy-900 	{font-weight: 900;}
+.font-16 {font-size: $font-size-base !important; line-height: 2;}
+.font-22 {font-size: em($font-size-22) !important; line-height: 2;}
+.font-24 {font-size: em($font-size-24) !important; line-height: 2;}
+.font-30 {font-size: em($font-size-30) !important; line-height: 2;}
+.font-36 {font-size: em($font-size-36) !important; line-height: 2;}
+.font-55 {font-size: em($font-size-55) !important; line-height: 1.4;}
+.font-72 {font-size: em($font-size-72) !important; line-height: 2;}
+
+.center {text-align: center;}
+.page-title {
+	margin-top: 190px;
+	font-size: em(60px) !important;
+	line-height: 1;
+	color: $white;
+	text-shadow: 1px 1px 5px rgba(35,31,32,.75);
+	letter-spacing: 0.01em;
+	text-align: center;
+}
+.section-header {
+	margin-bottom: 25px;
+	font-size: em(55px) !important;
+	font-weight: 300;
+	text-align: center;
+
+}
+.section-title-bold {
+	font-size: em(24px) !important;
+	font-weight: 700;
+	line-height: 2;
+	text-transform: uppercase;
+}
+
+sup {
+	top: -1em;
+	font-size: .500em;
+	font-style: italic;
+
+}
+
+.txt-l {text-align: left;}
+.txt-r {text-align: right;}
+
+@media (max-width: $screen-xs-max) { 
+	.page-title {font-size: em(40px) !important;}
+	.section-header {font-size: em(36px) !important;}
+	.txt-l {text-align: left;}
+	.txt-r {text-align: left !important;}
+}

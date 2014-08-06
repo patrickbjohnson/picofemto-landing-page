@@ -1,0 +1,27 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+// endbower
+
+@import 'helpers/variables.scss';
+@import 'helpers/functions.scss';
+@import 'helpers/typography.scss';
+@import 'helpers/helpers.scss';
+
+@import 'base/base.scss';
+@import 'base/buttons.scss';
+
+
+@import 'sections/nav.scss';
+@import 'sections/intro.scss';
+@import 'sections/product.scss';
+@import 'sections/benefit.scss';
+@import 'sections/testimonial.scss';
+@import 'sections/signup.scss';
+@import 'sections/about.scss';
+@import 'sections/footer.scss';
+@import 'sections/modal.scss';
+
+
+@import 'overrides/overrides.scss';
