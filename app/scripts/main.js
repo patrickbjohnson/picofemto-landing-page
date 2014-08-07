@@ -1,31 +1,32 @@
 'use strict';
 $(document).ready(function(){
+	if (!Modernizr.svg){
+		$('img[src*="svg"]').attr('src', function(){
+			return $(this).attr('src').replace('.svg', '.png');
+		});
+	}
 	$('input, textarea').placeholder();
-	$('img').svgmagic();
 	$('img[usemap]').rwdImageMaps();
 	$('#intro').height($(window).height());
 	$(window).resize(function(){
 		$('#intro').height($(window).height());
 	});
-	$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-			var	target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				$('html,body').animate({
-					scrollTop: target.offset().top
-				}, 800);
-				return false;
-			}
-		}
+	$('a[href*=#]:not(a[role="button"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+	        var target = $(this.hash);
+	        target = target.length ? target : $(this.hash.slice(1));
+	        if (target.length) {
+	            $('html,body').animate({
+	                scrollTop: target.offset().top
+	            }, 800);
+	            return false;
+	        }
+	    }
 	});
 	$('map').on('click', 'area', function(e){
 		e.preventDefault();
-		console.log('clicked');
 		var $this = $(this);
-		console.log($this);
 		var $link = $this.attr('href');
-
 		if (!$this.hasClass('is-active')){
 			$this.siblings().removeClass('is-active');
 			$this.addClass('is-active');
@@ -67,10 +68,10 @@ $(document).ready(function(){
 				}
 			}
 			$('.message').html(data.msg);
-			$(this).reset();
+			$('#form-demo')[0].reset();
 		}).fail(function(error){
-			$('.message').html(data.msg);
-			$(this).reset();
+			$('.message').html(error.msg);
+			$('#form-demo')[0].reset();
 		});
 	});
 });

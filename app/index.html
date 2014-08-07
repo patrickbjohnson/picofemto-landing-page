@@ -1,5 +1,10 @@
     <!doctype html>
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+    <!--[if gt IE 9]><!-->
+
     <html class="no-js">
+    <!--<![endif]-->
     <head>
       <meta charset="utf-8">
       <title>picofemto landing</title>
@@ -54,7 +59,7 @@
                 <input type="text" class="form-control col-sm-3 col-xs-12" name="password" placeholder="Password">
                 <button type="submit" class="btn-primary btn-sm col-sm-3 col-xs-12">Sign In</button>  
             </div>
-            <a class="pw-reset" href="#">I forgot my password</a>
+            <a class="pw-reset" href="mailto:info@picofemto.com">I forgot my password</a>
           </form>
           
         </div><!-- /.navbar-collapse -->
@@ -76,39 +81,48 @@
     <div class="page-section marketing row center" id="marketing">
       <h1 class="font-36">Cliniscan<sup>SM</sup> EEG Decision Support enables clinicians and researchers to work in the cloud with a wide range of biomedical modalities.</h1>
       <img class="pico-divide" src="images/divider.svg" alt="Picofemto Page Divider">
-      <h2 class="font-55 center">The revolutionary new way to work with complex biomedical data like EEG and radiological imaging</h2>
+      
     </div>
   </div>
   <!-- /marketing section -->
-  <div class="section jumbotron product-key" id="features">
-    <img class="img-responsive" src="images/product-comp.jpg" usemap="#keyfeatures" alt="">
-      <map id="keyfeatures" name="keyfeatures">
-        <area shape="circle" alt="" title="" coords="489,140,26" href="#power" target="_self" />
-        <area shape="circle" alt="" title="" coords="667,271,26" href="#coherence" target="_self" />
-        <area shape="circle" alt="" title="" coords="607,452,26" href="#ica" target="_self" />
-        <area shape="circle" alt="" title="" coords="136,376,26" href="#dsa" target="_self" />
-      </map>
-    <div class="key-features">
-      <h1>Key Features</h1>
-      <div class="features">
-        <div id="power" class="feat-description col-xs-12 col-sm-6 col-md-12 is-active">
-          <h2>1. Power</h2>
-          <p>Using FFT, analyze and compare the spectrum of any EEG two channels and apply Wavelet Subband breakdown to inspect the individual known frequency subband signals (Delta, Theta, Alpha, Beta and Gamma) making up the channel data.</p>
-        </div>
-        <div id="coherence" class="feat-description col-xs-12 col-sm-6 col-md-12">
-          <h2>2. Coherence</h2>
-          <p>Rapidly scrutinize inter- and/or intra-hemispheric communications using Coherence maps. The tool comprises a sensitivity bar with a threshold marker as well as application of coherence calculations on known frequency subbands and the composite channel data.</p>
-        </div>
-        <div id="ica" class="feat-description col-xs-12 col-sm-6 col-md-12">
-          <h2>3. ICA</h2>
-          <p>Visualize the regions of highest electrophysiological activity through the Independent Component Analysis. Using blind source separation, detected sources are back projected onto the electrode map to examine influence of each sources on all electrodes. Any portion of the EEG recording can be investigated for the most powerful sources conjointly with the overall effect of all sources.</p>
-        </div>
-        <div id="dsa" class="feat-description col-xs-12 col-sm-6 col-md-12">
-          <h2>4. DSA</h2>
-          <p>The density spectral array acts as a fast way to picture changes in the frequency composition of EEG channel data. The investigator views the dominant frequency ranges through a color spectrum scaled to the lower and higher powers of frequency ranges in individual and in all channels.</p>
-        </div>
-      </div> 
+  <div class="section" id="features">
+    <div class="container">
+      <div class="row">
+        <h1 class="font-55 center">The revolutionary new way to work with complex biomedical data like EEG and radiological imaging</h1>
+      </div>
     </div>
+    
+    <div class="section jumbotron product-key">
+      <img class="img-responsive" src="images/product-comp.jpg" usemap="#keyfeatures" alt="">
+        <map id="keyfeatures" name="keyfeatures">
+          <area shape="circle" alt="" title="" coords="489,140,26" href="#power" target="_self" />
+          <area shape="circle" alt="" title="" coords="667,271,26" href="#coherence" target="_self" />
+          <area shape="circle" alt="" title="" coords="607,452,26" href="#ica" target="_self" />
+          <area shape="circle" alt="" title="" coords="136,376,26" href="#dsa" target="_self" />
+        </map>
+      <div class="key-features">
+        <h1>Key Features</h1>
+        <div class="features">
+          <div id="power" class="feat-description col-xs-12 col-sm-6 col-md-12 is-active">
+            <h2>1. Power</h2>
+            <p>Using FFT, analyze and compare the spectrum of any EEG two channels and apply Wavelet Subband breakdown to inspect the individual known frequency subband signals (Delta, Theta, Alpha, Beta and Gamma) making up the channel data.</p>
+          </div>
+          <div id="coherence" class="feat-description col-xs-12 col-sm-6 col-md-12">
+            <h2>2. Coherence</h2>
+            <p>Rapidly scrutinize inter- and/or intra-hemispheric communications using Coherence maps. The tool comprises a sensitivity bar with a threshold marker as well as application of coherence calculations on known frequency subbands and the composite channel data.</p>
+          </div>
+          <div id="ica" class="feat-description col-xs-12 col-sm-6 col-md-12">
+            <h2>3. ICA</h2>
+            <p>Visualize the regions of highest electrophysiological activity through the Independent Component Analysis. Using blind source separation, detected sources are back projected onto the electrode map to examine influence of each sources on all electrodes. Any portion of the EEG recording can be investigated for the most powerful sources conjointly with the overall effect of all sources.</p>
+          </div>
+          <div id="dsa" class="feat-description col-xs-12 col-sm-6 col-md-12">
+            <h2>4. DSA</h2>
+            <p>The density spectral array acts as a fast way to picture changes in the frequency composition of EEG channel data. The investigator views the dominant frequency ranges through a color spectrum scaled to the lower and higher powers of frequency ranges in individual and in all channels.</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+
   </div>
   <!-- /featires section -->
   <div class="section container benefits" id="benefits">
@@ -224,7 +238,7 @@
   <div class="section container about center" id="about">
     <div class="row">
       <h1>About Picofemto</h1>
-      <p>We’re an NYC-based company conceived in 2011. Our mission is to revolutionize healthcare with an open-architecture medical analytics platform, enable physicians to retrieve, process and store biomedical data utilizing algorithmic analysis, and change the way physicians view, analyze and process biomedical data. </p><a href="http://www.picofemto.com">http://www.picofemto.com</a>
+      <p>We’re an NYC-based company conceived in 2011. Our mission is to revolutionize healthcare with an open-architecture medical analytics platform, enable physicians to retrieve, process and store biomedical data utilizing algorithmic analysis, and change the way physicians view, analyze and process biomedical data. </p><a href="http://www.picofemto.com">www.picofemto.com</a>
       <img class="pico-divide center" src="images/divider.svg" alt="Picofemto Page Divider">
     </div>
   </div>
@@ -239,7 +253,7 @@
           <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
             <span class="glyphicon glyphicon-map-marker"></span>
             <p>708 3rd Avenue, 6th Floor<br>New York, NY 10017</p>
-            <p class="copyright">&copy; Picofemto 2014  |  Privacy Policy</p>
+            <p class="copyright">&copy; Picofemto 2014  |  <a href="http://picofemto.com/privacy/" target="_blank">Privacy Policy</a></p>
             </li>
           <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
             <span class="glyphicon glyphicon-envelope"></span>
@@ -259,13 +273,13 @@
         <div class="modal-body">
           <form id="form-demo" method="POST" action="includes/form.php" role="form">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group name-group">
                   <label for="name">Full Name</label>
                   <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" tabindex="1" required>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group email-group">
                   <label for="email">Email</label>
                   <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" required>
@@ -273,13 +287,13 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group company-group">
                   <label for="company">Company</label>
                   <input type="text" name="company" id="company" class="form-control" placeholder="Company" tabindex="3" required>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group title-group">
                   <label for="title">Title</label>
                   <input name="title" id="title" class="form-control" placeholder="Title" tabindex="4" required></input>
@@ -332,7 +346,6 @@
   <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
   <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
   <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
-  <script src="bower_components/SVGMagic/src/jquery.svgmagic.js"></script>
   <script src="bower_components/rwdImageMaps/jquery.rwdImageMaps.js"></script>
   <!-- endbuild -->
 

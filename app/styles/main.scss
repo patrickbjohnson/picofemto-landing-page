@@ -8,11 +8,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import 'helpers/functions.scss';
 @import 'helpers/typography.scss';
 @import 'helpers/helpers.scss';
-
 @import 'base/base.scss';
 @import 'base/buttons.scss';
-
-
 @import 'sections/nav.scss';
 @import 'sections/intro.scss';
 @import 'sections/product.scss';
@@ -22,6 +19,4 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import 'sections/about.scss';
 @import 'sections/footer.scss';
 @import 'sections/modal.scss';
-
-
 @import 'overrides/overrides.scss';

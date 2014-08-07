@@ -7,13 +7,14 @@
 	@include vendor-prefix(background-size, cover);
 	@include vendor-prefix(transform, rotateZ(360deg));
 	@include vendor-prefix(transition, all 100ms ease);
+  @include vendor-prefix(background-position, 100%);
 	position: relative;
 	width: 100%;
 	color: $white;
 	background-image: url(../images/hero@2x.jpg); 
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/hero@2x.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/hero@2x.jpg',sizingMethod='scale')";
 	background-repeat: no-repeat;
-	background-position: 100%;
-	
 	overflow: hidden;
 	
   &-message {
@@ -44,8 +45,10 @@
 
   	}
   	a {
+      position: relative;
   		width: 100%;
   		margin: 5px auto;
+      z-index: 100;
   	}
   }
 

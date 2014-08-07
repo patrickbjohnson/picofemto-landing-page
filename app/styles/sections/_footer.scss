@@ -9,6 +9,8 @@
 		p.copyright {
 			font-size: em(10px);
 			font-weight: bold;
+			a {color: $black; text-decoration: none;}
+			
 		}
 	}
 	.glyphicon {

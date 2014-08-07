@@ -1,11 +1,13 @@
 .company-shot {
 	@include vendor-prefix(background-size, cover);
 	@include vendor-prefix(background-position, 100%);
-	height: 320px;
-	background-image: url(../images/team@2x.jpg);
-	background-repeat: no-repeat;
+	height: 370px;
 	position: relative;
 	overflow: hidden;
+	background-image: url(../images/team@2x.jpg);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/team@2x.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/team@2x.jpg',sizingMethod='scale')";
+	background-repeat: no-repeat;
 }
 
 .about {

@@ -1,22 +1,18 @@
 .testimonial {
-
-	// .carousel {height: 300px;}
 	.carousel-caption p {
-		font-size: em(20px);
+		font-size: em(28px);
 		font-style: italic;
+		line-height: 1.5;
 	}
-
 	.carousel-indicators li {
 		margin: 0 5px;
 	}
 
-	/* Since positioning the image, we need to help out the caption */
 	.carousel-caption {
 	  z-index: 1;
 	  bottom: 40px;
 	}
 
-	/* Declare heights because of positioning of img element */
 	.carousel .item {
 	  height: 300px;
 	  background-color:#555;
@@ -27,12 +23,4 @@
 	  left: 0;
 	  min-height: 300px;
 	}
-
-	// phone to large ipad
-	@media (min-width: $screen-xs-min) { 
-		.carousel-caption p {
-			font-size: em(24px);
-		}
-	}
-
 }
