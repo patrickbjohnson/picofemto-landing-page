@@ -13,6 +13,10 @@
 		color: $pico-orange;
 		margin: 0 10px; 
 	}
+	.btn-primary {
+		margin-left: 0;
+		margin-right: 0; 
+	}
 	.btn-primary:hover {
 		border: 3px solid $pico-blue;
 	}

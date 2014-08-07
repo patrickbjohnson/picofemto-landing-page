@@ -1,6 +1,4 @@
-// .product-benefits .pico-divide {
-// 	margin-bottom: 0;
-// }
+
 .benefits {
 	h1 {text-align: center;}
 	&-hero {
@@ -24,8 +22,6 @@
 			height: 100%;
 		}
 	}
-
-	// icons group
 	&-icons {
 		display: inline-block;
 		vertical-align: middle;
@@ -49,19 +45,6 @@
 		line-height: 125px;
 	}
 }
-
-// .product-item {
-// 	height: 300px;
-// 	text-align: center;
-
-// 	h1 {font-size: em(24px);}
-// 	.icons {
-// 		display: inline-block;
-// 		line-height: 125px;
-// 	}
-// }
-
-
 .dashboard 	{width: 65px; height: 65px;}
 .toolbox 		{width: 90px; height: 65px;}
 .plugin 		{width: 75px; height: 70px;}

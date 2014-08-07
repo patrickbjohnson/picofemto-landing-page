@@ -1,420 +1,9 @@
-// // .product img {width: 100%;}
-
-// .product {
-// 	color: $white;
-// 	.container {width: 100%;}
-// 	.row {padding: 40px 20px;}
-// }
-
-// .features-anchor {
-// 	position: relative;
-// 	ul {
-// 		padding:0;
-// 		margin: 0;
-
-// 		li {
-// 			display: inline-block;
-
-// 			a {
-// 				@include vendor-prefix(border-radius, 50%);
-// 				@include vendor-prefix(transition, 300ms all);
-// 				position: absolute;
-// 				display: block;
-// 				height: 50px;
-// 				width: 50px;
-// 				background: $pico-orange;
-// 				color: $white;
-// 				font-size: em(24px);
-// 				text-align: center;
-// 				line-height: 50px;
-
-// 			}
-// 			a:hover {
-// 				text-decoration: none;
-// 				background: darken($pico-orange, 10%);
-// 			}
-// 		} 
-// 	}
-// }
-
-// .feat-description	{
-// 	@include vendor-prefix(transition, opacity 600ms);
-// 	display: block;
-// 	opacity: 1;
-// }
-
-
-// .features {color: $black;}
-
-
-// .product h1 {
-// 	color: $white;
-// 	margin-top: -60%;
-// 	font-size: em(34px);
-// }
-
-// .features {
-// 	margin-top: 100px;
-// }
-
-// // phone screen
-// @media (max-width: $screen-sm){
-// 	.features-anchor {
-// 		display: none;
-// 	}
-// }
-
-// // phone to large ipad
-// @media (min-width: $screen-xs-min) and (max-width: $screen-md){ 
-// 		.features-anchor {
-// 			display: none;
-// 		}
-// 		.features {
-// 			color: $black;
-// 		}
-
-// 		.product h1 {
-// 			margin-top: -320px;
-// 			font-size: em(80px);
-// 			color: $white;
-// 		}
-
-// 		.features {
-// 			margin-top: 230px;
-// 		}
-// }
-
-// // ipad-desktop and up
-// @media (min-width: $screen-md){
-// 	.product h1 {
-// 		font-size: em(55px);
-// 		text-align: left;
-// 	}
-// 	.key-features {
-// 		position: absolute;
-// 		top: 0;
-// 		height: 560px;
-// 		overflow: hidden;
-// 	}
-// 	.features {
-// 		color: $white;
-// 		h2 {
-// 			display: inline-block;
-// 			font-size: em(36px);
-// 			font-weight: 600;
-// 		}
-// 		p {
-// 			font-size: em(24px);
-// 			line-height: 1.5;
-// 		}
-// 	}
-// 	.feat-description {
-// 		position: absolute;
-// 		top: 100px;
-// 		opacity: 0;
-// 	}
-// 	.feat-description.is-active {
-// 		opacity: 1;
-// 	}
-
-// 	.features-anchor {
-// 		position: relative;
-// 		ul {
-// 			padding:0;
-// 			margin: 0;
-
-// 			li {
-// 				display: inline-block;
-
-// 				a {
-					
-// 					@include vendor-prefix(border-radius, 50%);
-// 					@include vendor-prefix(transition, 300ms all);
-// 					position: absolute;
-// 					display: block;
-// 					height: 50px;
-// 					width: 50px;
-// 					background: $pico-orange;
-// 					color: $white;
-// 					font-size: em(24px);
-// 					text-align: center;
-// 					line-height: 50px;
-
-// 				}
-// 				a:hover {
-// 					text-decoration: none;
-// 					background: darken($pico-orange, 10%);
-// 				}
-// 			} 
-// 		}
-// 	}
-// 	.feature-1 {
-// 		top: 186%;
-// 		left: 53%;
-// 	}
-// 	.feature-2 {
-// 		top: 580%;
-// 		left: 75%;
-// 	}
-// 	.feature-3 {
-// 		top: 1130%;
-// 		left: 65%;
-// 	}
-// 	.feature-4 {
-// 		top: 920%;
-// 		left: 12%;
-// 	}
-// }
-
-// 	/* Medium Devices, Desktops */
-// 	@media (min-width : 992px) {
-
-// 			.product	h1 {
-// 				margin-top: 0;
-// 				line-height: 1.2;
-// 				font-size: em(44px);
-// 			}
-// 			.features-anchor {
-// 				display: block;
-// 			}
-			
-// 	}
-
-// 		/* Large Devices, Wide Screens */
-// 	@media (min-width : 1200px) {
-// 		.product	h1 {
-// 				font-size: em(55px);
-// 			}
-// 			.feature-1 {
-// 				top: 296%;
-// 				left: 53%;
-// 			}
-// 			.feature-2 {
-// 				top: 780%;
-// 				left: 75%;
-// 			}
-// 			.feature-3 {
-// 				top: 350px;
-// 				left: 65%;
-// 			}
-// 			.feature-4 {
-// 				top: 300px;
-// 				left: 10%;
-// 			}
-// 	}
-
-// div.key-features {height: 100% !important;}
-// .product-key img {width: 100%;}
-
-// .product-key {
-// 	color: $white;
-// 	.container {width: 100%;}
-// 	.row {padding: 40px 20px;}
-// }
-
-// .features-anchor {
-// 	position: relative;
-// 	ul {
-// 		padding:0;
-// 		margin: 0;
-
-// 		li {
-// 			display: inline-block;
-
-// 			a {
-// 				@include vendor-prefix(border-radius, 50%);
-// 				@include vendor-prefix(transition, 300ms all);
-// 				position: absolute;
-// 				display: block;
-// 				height: 50px;
-// 				width: 50px;
-// 				background: $pico-orange;
-// 				color: $white;
-// 				font-size: em(22px);
-// 				text-align: center;
-// 				line-height: 50px;
-
-// 			}
-// 			a:hover {
-// 				text-decoration: none;
-// 				background: darken($pico-orange, 10%);
-// 			}
-// 		} 
-// 	}
-
-// 	.feature-1 {
-// 		top: 70px;
-// 		left: 400px;
-// 	}
-// 	.feature-2 {
-// 		top: 190px;
-// 		left: 600px;
-// 	}
-// 	.feature-3 {
-// 		top: 350px;
-// 		left: 500px;
-// 	}
-// 	.feature-4 {
-// 		top: 300px;
-// 		left: 80px;
-// 	}
-// }
-
-// .feat-description	{
-// 	@include vendor-prefix(transition, opacity 600ms);
-// 	display: block;
-// 	opacity: 1;
-// }
-// // .is-active {opacity: 1;}
-
-// .features {color: $black;}
-
-
-// .product-key h1 {
-// 	color: $white;
-// 	margin-top: -60%;
-// 	font-size: em(34px);
-// }
-
-// .features {
-// 	margin-top: 100px;
-// }
-
-// // phone screen
-// @media (max-width: $screen-sm){
-// 	.features-anchor {
-// 		display: none;
-// 	}
-// }
-
-// // phone to large ipad
-// @media (min-width: $screen-xs-min) and (max-width: $screen-md){ 
-// 		.features-anchor {
-// 			display: none;
-// 		}
-// 		.features {
-// 			color: $black;
-// 		}
-
-// 		.product-key h1 {
-// 			margin-top: -320px;
-// 			font-size: em(80px);
-// 			color: $white;
-// 		}
-
-// 		.features {
-// 			margin-top: 230px;
-// 		}
-// }
-
-// // ipad-desktop and up
-// @media (min-width: $screen-md){
-// 	.product-key h1 {
-// 		font-size: em(55px);
-// 		text-align: left;
-// 	}
-// 	.key-features {
-// 		position: absolute;
-// 		top: 0;
-// 		height: 560px;
-// 		overflow: hidden;
-// 	}
-// 	.features {
-// 		color: $white;
-// 		h2 {
-// 			display: inline-block;
-// 			font-size: em(36px);
-// 			font-weight: 600;
-// 		}
-// 		p {
-// 			font-size: em(22px);
-// 			line-height: 1.5;
-// 		}
-// 	}
-// 	.feat-description {
-// 		position: absolute;
-// 		top: 100px;
-// 		opacity: 0;
-// 	}
-// 	.feat-description.is-active {
-// 		opacity: 1;
-// 	}
-
-// 	.features-anchor {
-// 		position: relative;
-// 		ul {
-// 			padding:0;
-// 			margin: 0;
-
-// 			li {
-// 				display: inline-block;
-
-// 				a {
-					
-// 					@include vendor-prefix(border-radius, 50%);
-// 					@include vendor-prefix(transition, 300ms all);
-// 					position: absolute;
-// 					display: block;
-// 					height: 50px;
-// 					width: 50px;
-// 					background: $pico-orange;
-// 					color: $white;
-// 					font-size: em(24px);
-// 					text-align: center;
-// 					line-height: 50px;
-
-// 				}
-// 				a:hover {
-// 					text-decoration: none;
-// 					background: darken($pico-orange, 10%);
-// 				}
-// 			} 
-// 		}
-
-// 		.feature-1 {
-// 			top: 70px;
-// 			left: 50%;
-// 		}
-// 		.feature-2 {
-// 			top: 190px;
-// 			left: 75%;
-// 		}
-// 		.feature-3 {
-// 			top: 350px;
-// 			left: 65%;
-// 		}
-// 		.feature-4 {
-// 			top: 300px;
-// 			left: 10%;
-// 		}
-// 	}
-// }
-
-// 	/* Medium Devices, Desktops */
-// 	@media only screen and (min-width : 992px) {
-
-// 			.product-key	h1 {
-// 				margin-top: 0;
-// 				line-height: 1.2;
-// 				font-size: em(44px);
-// 			}
-// 			.features-anchor {
-// 				display: block;
-// 			}
-// 	}
-
-// 		/* Large Devices, Wide Screens */
-// 	@media only screen and (min-width : 1200px) {
-// 		.product-key	h1 {
-// 				font-size: em(55px);
-// 			}
-// 	}
 .jumbotron.product-key {
 	background: transparent;
 }
 div.key-features,
 .key-features.row,
- {height: 100% !important;}
+	{height: 100% !important;}
 .product-key img {width: 100%;}
 
 .key-features {
@@ -430,67 +19,53 @@ div.key-features,
 }
 
 
- @media (min-width: $screen-md){
+@media (min-width: $screen-md){
+	.key-features {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 33.33333%;
+		color: $white;
+		p {
+			font-size: em(20px);
+			line-height: 1.4;
+		}
+	}
+	.features {
+		position: relative;
+	}
+	.feat-description {
+		position: absolute;
+		margin-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+		opacity: 0;
+
+	}
+	.feat-description.is-active {
+		@include vendor-prefix(transition, all 900ms ease);
+		opacity: 1;
+	}
+
+}
+
+ @media (min-width: $screen-md) and (max-width: 1160px){
  	.key-features {
- 			position: absolute;
- 			top: 0;
- 			right: 0;
- 			width: 33.33333%;
- 			color: $white;
-
- 		// h1 {
- 		// 	font-size: em(55px);
- 		// 	line-height: 1;
- 		// }
- 		p {
- 			font-size: em(20px);
- 			line-height: 1.4;
- 		}
- 	}
- 	.features {
- 		position: relative;
- 	}
- 	.feat-description {
- 		position: absolute;
- 		margin-top: 0;
- 		padding-left: 0;
- 		padding-right: 0;
- 		opacity: 0;
-
- 	}
- 	.feat-description.is-active {
- 		@include vendor-prefix(transition, all 900ms ease);
- 		opacity: 1;
- 	}
- 	
- }
-
-
- // @media (min-width: $screen-md) and (max-width: 1030px){
- // 	.key-features {
- // 		h1 {font-size: em(36px) !important;
-	// 		margin-bottom: 0;
- // 		}
- // 	}
- // }
-	
-	@media (min-width: $screen-md) and (max-width: 1160px){
-		.key-features {
-			h1 {font-size: em(36px);
-				margin-bottom: 10px;
-			}
-			// p {font-size: em(20px);}
+ 		h1 {
+ 			font-size: em(36px);
+ 			margin-bottom: 10px;
+ 			}
 		}
 		.feat-description {padding-right: 0;}
 		.feat-description p {font-size: em(18px);}
 	}
 
- @media (min-width: $screen-lg){
-	.key-features {
-		h1 {font-size: em(55px); line-height: 1;}
-		p {line-height: 1.75;}
+	@media (min-width: $screen-lg){
+		.key-features {
+			h1 {font-size: em(55px); line-height: 1;}
+			p {line-height: 1.75;}
+		}
+		.feat-description {
+			margin-top: 15px; 
+		}
 	}
-	.feat-description {
-		margin-top: 15px; 
-	}
- }

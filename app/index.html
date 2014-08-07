@@ -109,72 +109,6 @@
         </div>
       </div> 
     </div>
-<!--     <div class="container key-features">
-      <div class="row">
-
-        <div class="col-xs-12 col-sm-12 col-md-8 features-anchor">
-          <ul>
-            <li class="is-active"><a class="col-md-2 feature-1 " href="#power">1</a></li>
-            <li><a class="col-md-2 feature-2" href="#love">2</a></li>
-            <li><a class="col-md-2 feature-3" href="#fear">3</a></li>
-            <li><a class="col-md-2 feature-4" href="#hope">4</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-4">
-          <h1>Key Features</h1>
-          <div class="features">
-            <div id="power" class="feat-description col-xs-12 col-sm-6 col-md-12 is-active">
-              <h2>1. Power</h2>
-              <p>Using FFT, analyze and compare the spectrum of any EEG two channels and apply Wavelet Subband breakdown to inspect the individual known frequency subband signals (Delta, Theta, Alpha, Beta and Gamma) making up the channel data.</p>
-            </div>
-            <div id="coherence" class="feat-description col-xs-12 col-sm-6 col-md-12">
-              <h2>2. Coherence</h2>
-              <p>Rapidly scrutinize inter- and/or intra-hemispheric communications using Coherence maps. The tool comprises a sensitivity bar with a threshold marker as well as application of coherence calculations on known frequency subbands and the composite channel data.</p>
-            </div>
-            <div id="ica" class="feat-description col-xs-12 col-sm-6 col-md-12">
-              <h2>3. ICA</h2>
-              <p>Visualize the regions of highest electrophysiological activity through the Independent Component Analysis. Using blind source separation, detected sources are back projected onto the electrode map to examine influence of each sources on all electrodes. Any portion of the EEG recording can be investigated for the most powerful sources conjointly with the overall effect of all sources.</p>
-            </div>
-            <div id="dsa" class="feat-description col-xs-12 col-sm-6 col-md-12">
-              <h2>4. DSA</h2>
-              <p>The density spectral array acts as a fast way to picture changes in the frequency composition of EEG channel data. The investigator views the dominant frequency ranges through a color spectrum scaled to the lower and higher powers of frequency ranges in individual and in all channels.</p>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div> -->
-    
-    <!-- <img class="img-responsive" src="images/product-comp.jpg" usemap="#keyfeatures" alt="">
-    <map id="key-features" name="key-features"><area shape="circle" alt="Power" title="" coords="488,139,27" href="#power" target="" /><area shape="circle" alt="coherence" title="" coords="667,271,27" href="#coherence" target="" /><area shape="circle" alt="ica" title="" coords="607,452,27" href="#ica" target="" /><area shape="circle" alt="dsa" title="" coords="137,377,27" href="#dsa" target="" /></map> -->
-    
-
-
-    <!-- <div class="container key-features">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-offset-8 col-md-4">
-          <h1>Key Features</h1>
-          <div class="features">
-            <div id="power" class="feat-description col-xs-12 col-sm-12 col-md-12 is-active">
-              <h2>1. Power</h2>
-              <p>Using FFT, analyze and compare the spectrum of any EEG two channels and apply Wavelet Subband breakdown to inspect the individual known frequency subband signals (Delta, Theta, Alpha, Beta and Gamma) making up the channel data.</p>
-            </div>
-            <div id="coherence" class="feat-description col-xs-12 col-sm-12 col-md-12">
-              <h2>2. Coherence</h2>
-              <p>Rapidly scrutinize inter- and/or intra-hemispheric communications using Coherence maps. The tool comprises a sensitivity bar with a threshold marker as well as application of coherence calculations on known frequency subbands and the composite channel data.</p>
-            </div>
-            <div id="ica" class="feat-description col-xs-12 col-sm-12 col-md-12">
-              <h2>3. ICA</h2>
-              <p>Visualize the regions of highest electrophysiological activity through the Independent Component Analysis. Using blind source separation, detected sources are back projected onto the electrode map to examine influence of each sources on all electrodes. Any portion of the EEG recording can be investigated for the most powerful sources conjointly with the overall effect of all sources.</p>
-            </div>
-            <div id="dsa" class="feat-description col-xs-12 col-sm-12 col-md-12">
-              <h2>4. DSA</h2>
-              <p>The density spectral array acts as a fast way to picture changes in the frequency composition of EEG channel data. The investigator views the dominant frequency ranges through a color spectrum scaled to the lower and higher powers of frequency ranges in individual and in all channels.</p>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div> -->
   </div>
   <!-- /featires section -->
   <div class="section container benefits" id="benefits">
@@ -323,18 +257,18 @@
           <p class="modal-title center" id="myModalLabel">Thanks for your interest in Cliniscan EEG Decision Support! We are currently in private beta so please fill out the form below and we’ll be in touch to set you up with a demo.</p>
         </div>
         <div class="modal-body">
-          <form id="form-demo" method="POST" action="includes/test.php" role="form">
+          <form id="form-demo" method="POST" action="includes/form.php" role="form">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group name-group">
                   <label for="name">Full Name</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" tabindex="1" >
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" tabindex="1" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group email-group">
                   <label for="email">Email</label>
-                  <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" >
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" required>
                 </div>
               </div>
             </div>
@@ -342,19 +276,19 @@
               <div class="col-md-6">
                 <div class="form-group company-group">
                   <label for="company">Company</label>
-                  <input type="text" name="company" id="company" class="form-control" placeholder="Company" tabindex="3" >
+                  <input type="text" name="company" id="company" class="form-control" placeholder="Company" tabindex="3" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group title-group">
                   <label for="title">Title</label>
-                  <input name="title" id="title" class="form-control" placeholder="Title" tabindex="4" ></input>
+                  <input name="title" id="title" class="form-control" placeholder="Title" tabindex="4" required></input>
                 </div>
               </div>
             </div>
             <div class="row message center"></div>
             <div class="row center">
-              <button class="btn btn-primary" name="submit" tabindex="4">submit</button>
+              <button class="btn btn-primary" name="submit" tabindex="5">submit</button>
             </div>
           </form>
         </div>
@@ -369,8 +303,8 @@
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
-  <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/modernizr/modernizr.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -404,6 +338,14 @@
 
   <!-- build:js({app,.tmp}) scripts/main.js -->
   <script src="scripts/main.js"></script>
+  <script type='text/javascript'>
+  (function (d, t) {
+    var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    bh.type = 'text/javascript';
+    bh.src = '//www.bugherd.com/sidebarv2.js?apikey=7mdpruatexpgtpyajfkvdq';
+    s.parentNode.insertBefore(bh, s);
+    })(document, 'script');
+  </script>
 
   <!-- endbuild -->
 </body>
